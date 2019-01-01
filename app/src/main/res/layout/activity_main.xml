@@ -1,23 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.example.deng.myapplication.MainActivity">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
 
-
-    <ImageView
-        android:id="@+id/editText"
-        android:src="@drawable/img"
-        android:layout_height="match_parent"
+    <TextView
+        android:background="@drawable/hei"
+        android:layout_gravity="center"
         android:layout_width="wrap_content"
-        android:textAlignment="center"
-        />
-    <Button
-        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="点击播放"
-        android:id="@+id/btn"/>
+        android:text="我的第一个测试app"
+        android:id="@+id/text" />
 
-</android.support.constraint.ConstraintLayout>
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="播放/停止" />
+    <!--layout_gravity里面的文本居中
+        直接用gravity=bottom好像没用-->
+
+</LinearLayout>
